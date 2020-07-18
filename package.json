@@ -16,7 +16,7 @@
     "bootstrap3": "^3.3.5",
     "echarts": "^4.6.0",
     "echarts-liquidfill": "^2.0.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "qs": "^6.9.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
