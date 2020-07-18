@@ -1,0 +1,570 @@
+/* echart 基础样式 */
+.group-title{
+  margin-top: 16px;
+  line-height: 40px;
+  font-size: 18px;
+}
+.group-title span.title-text{
+  display: inline-block;
+  padding-left: 16px;
+}
+.group-title span.title-text::before{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 16px;
+  background: #0696ff;
+  content: '';
+  vertical-align: middle;
+}
+.echart-group{
+  margin: 0 -4px;
+}
+.echart-h-wrapper{
+  height: 408px;
+  padding: 0 2px;
+}
+.echart-h-wrapper.absolute{
+  width:100%;
+  visibility: hidden;
+}
+.echart-h-wrapper.absolute.visible{
+  visibility: visible;
+}
+.echart-h-wrapper.high{
+  height: 504px;
+}
+.echart-switch{
+  right: 24px;
+  top: 28px;
+  z-index:100;
+}
+.echart-switch .switch-item{
+  width: 64px;
+  height: 28px;
+  margin-left: 8px;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+/*.echart-switch .switch-item:first-child{*/
+/*    border-radius:4px 0px 0px 4px;*/
+/*}*/
+/*.echart-switch .switch-item:last-child{*/
+/*    border-radius:0px 4px 4px 0px;*/
+/*}*/
+.echart-h-box{
+  position: relative;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 4px;
+}
+.echart-container{
+  height: 404px;
+}
+.echart-container.high{
+  height: 500px;
+}
+.echart-container.medium{
+
+}
+.echart-select{
+  width: 80px;
+  top: 28px;
+  right: 24px;
+  z-index: 10;
+  cursor: pointer;
+}
+.echart-select input{
+  width: 80px;
+}
+.echart-select .custom-input{
+  height: 32px;
+  line-height: 32px;
+  padding-left: 10px;
+  border: 0;
+  outline: 0;
+}
+.echart-select .custom-input.select{
+  background: url('../img/icon-arrow.png')90% center  no-repeat;
+}
+.echart-select .custom-input.select.open{
+  border-color: #0696ff;
+  background: url('../img/icon-activeArrow.png') 90% center no-repeat;
+}
+/*.echart-select .list-container{*/
+/*    padding: 5px 0;*/
+/*}*/
+.echart-select .list-container .select-item{
+  height: 32px;
+  line-height: 32px;
+}
+.echart-select .list-container .select-item.active{
+  /*background: #0696ff;*/
+}
+.echart-select .list-container .select-item .item-text{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 图表标题 tips */
+.chart-title{
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  padding-top: .5em;
+  font-size: 16px;
+  vertical-align: middle;
+  z-index: 100;
+  font-weight: normal;
+}
+.chart-title .main-title{
+  font-weight: bold;
+}
+.chart-title .sub-title{
+  margin-top: 8px;
+  font-size: 12px;
+}
+.chart-title .title-tips{
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 24px;
+  margin-left: .5em;
+  vertical-align: middle;
+  background: url("../img/question-circle-fill.png") center no-repeat;
+  cursor: pointer;
+}
+
+.chart-title .title-tips .tips-text {
+  display: none;
+  position: absolute;
+  bottom: -3em;
+  left: -7px;
+  width: auto;
+  padding-right: 1em;
+  /*line-height: 2.6em;*/
+  font-size: 12px;
+  text-indent: 1em;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.chart-title .title-tips:hover .tips-text{
+  display: inline-block;
+}
+.spanClass{
+  font-size: 8px;
+}
+
+/* 性别chart 样式 */
+#gender{
+  position: relative;
+  width: 100%;
+  height: 404px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.gender-wrapper{
+  position: relative;
+  margin: 0 26px 0 30px;
+  height: 100%;
+}
+.gender-wrapper .gender-bar {
+  position: absolute;
+  bottom: 88px;
+  height: 28px;
+}
+.gender-wrapper .gender-bar.male-bar {
+  left: -4px;
+  background-color: #0696ff;
+}
+.gender-wrapper .gender-bar.female-bar {
+  right: 0;
+}
+.gender-wrapper .gender-bar.male-bar .male-icon{
+  position: absolute;
+  top: -68px;
+  left: 0;
+  width: 51px;
+  height: 51px;
+  background: url('../img/icon-male.png')center left no-repeat;
+}
+.gender-wrapper .gender-bar.female-bar .female-icon{
+  position: absolute;
+  top: -68px;
+  right: 0;
+  width: 51px;
+  height: 51px;
+  background: url('../img/icon-female.png')center right no-repeat;
+}
+.gender-wrapper .gender-bar.male-bar p {
+  position: absolute;
+  top: 35px;
+  left: 4px;
+}
+.gender-wrapper .gender-bar.female-bar p {
+  position: absolute;
+  top: 35px;
+  right: 4px;
+}
+.gender-wrapper .gender-bar.male-bar .male-ratio{
+  position: absolute;
+  z-index: 1;
+  bottom: -56px;
+  left: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.gender-wrapper .gender-bar.female-bar .female-ratio {
+  position: absolute;
+  z-index: 1;
+  bottom: -56px;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* echart tooltip*/
+.tooltip-wrapper{
+  padding: 0;
+}
+.tooltip-title{
+  height: 32px;
+  padding: 0 8px;
+  line-height: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid #CCCCCC;
+}
+.tooltip-title .tooltip-title-icon{
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.tooltip-title .tooltip-title-text{
+  color: #333333;
+}
+.tooltip-content .tooltip-content-item{
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+.tooltip-content .tooltip-content-item .item-legend{
+  float: left;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.tooltip-content .tooltip-content-item .item-name{
+  float: left;
+  display: inline-block;
+  color: #4d4d4d;
+}
+.tooltip-content .tooltip-content-item .item-value{
+  float: right;
+  display: inline-block;
+  color: #333333; font-weight: bold;
+}
+/* svg */
+#directorSvg, #actorSvg{
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family:"sans-serif";
+  font-size:14px;
+  text-anchor:middle
+}
+/* echart 基础样式 */
+.group-title{
+  margin-top: 16px;
+  line-height: 40px;
+  font-size: 18px;
+}
+.group-title span.title-text{
+  display: inline-block;
+  padding-left: 16px;
+}
+.group-title span.title-text::before{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 16px;
+  background: #0696ff;
+  content: '';
+  vertical-align: middle;
+}
+.echart-h-wrapper{
+  height: 408px;
+  padding: 0 2px;
+}
+.echart-h-wrapper.absolute{
+  width:100%;
+  visibility: hidden;
+}
+.echart-h-wrapper.absolute.visible{
+  visibility: visible;
+}
+.echart-h-wrapper.high{
+  height: 504px;
+}
+.echart-switch{
+  right: 24px;
+  top: 28px;
+  z-index:100;
+}
+.echart-switch .switch-item{
+  width: 64px;
+  height: 28px;
+  margin-left: 8px;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+/*.echart-switch .switch-item:first-child{*/
+/*    border-radius:4px 0px 0px 4px;*/
+/*}*/
+/*.echart-switch .switch-item:last-child{*/
+/*    border-radius:0px 4px 4px 0px;*/ 
+/*}*/
+.echart-h-box{
+  position: relative;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 4px;
+}
+.echart-container{
+  height: 404px;
+}
+.echart-container.high{
+  height: 500px;
+}
+.echart-container.medium{
+
+}
+.echart-select{
+  width: 80px !important;
+  top: 28px;
+  right: 24px;
+  z-index: 10;
+  cursor: pointer;
+}
+.echart-select input{
+  width: 80px !important;
+}
+.echart-select .custom-input{
+  height: 32px;
+  line-height: 32px;
+  padding-left: 10px;
+  border: 0;
+  outline: 0;
+}
+.echart-select .custom-input.select{
+  background: url('../img/icon-arrow.png')90% center  no-repeat;
+}
+.echart-select .custom-input.select.open{
+  border-color: #0696ff;
+  background: url('../img/icon-activeArrow.png') 90% center no-repeat;
+}
+/*.echart-select .list-container{*/
+/*    padding: 5px 0;*/
+/*}*/
+.echart-select .list-container .select-item{
+  height: 32px;
+  line-height: 32px;
+}
+.echart-select .list-container .select-item.active{
+  /*background: #0696ff;*/
+}
+.echart-select .list-container .select-item .item-text{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 图表标题 tips */
+.chart-title{
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  padding-top: .5em;
+  font-size: 16px;
+  vertical-align: middle;
+  z-index: 100;
+  font-weight: normal;
+}
+.chart-title .main-title{
+  font-weight: bold;
+}
+.chart-title .sub-title{
+  margin-top: 8px;
+  font-size: 12px;
+}
+.chart-title .title-tips{
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 24px;
+  margin-left: .5em;
+  vertical-align: middle;
+  background: url("../img/question-circle-fill.png") center no-repeat;
+  cursor: pointer;
+}
+
+.chart-title .title-tips .tips-text {
+  display: none;
+  position: absolute;
+  bottom: -3em;
+  left: -7px;
+  width: auto;
+  padding-right: 1em;
+  /*line-height: 2.6em;*/
+  font-size: 12px;
+  text-indent: 1em;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.chart-title .title-tips:hover .tips-text{
+  display: inline-block;
+}
+.spanClass{
+  font-size: 8px;
+}
+
+/* 性别chart 样式 */
+#gender{
+  position: relative;
+  width: 100%;
+  height: 404px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.gender-wrapper{
+  position: relative;
+  margin: 0 26px 0 30px;
+  height: 100%;
+}
+.gender-wrapper .gender-bar {
+  position: absolute;
+  top: 200px;
+  height: 28px;
+}
+.gender-wrapper .gender-bar.male-bar {
+  left: -4px;
+  background-color: #0696ff;
+}
+.gender-wrapper .gender-bar.female-bar {
+  right: 0;
+}
+.gender-wrapper .gender-bar.male-bar .male-icon{
+  position: absolute;
+  top: -68px;
+  left: 0;
+  width: 51px;
+  height: 51px;
+  background: url('../img/icon-male.png')center left no-repeat;
+}
+.gender-wrapper .gender-bar.female-bar .female-icon{
+  position: absolute;
+  top: -68px;
+  right: 0;
+  width: 51px;
+  height: 51px;
+  background: url('../img/icon-female.png')center right no-repeat;
+}
+.gender-wrapper .gender-bar.male-bar p {
+  position: absolute;
+  top: 35px;
+  left: 4px;
+}
+.gender-wrapper .gender-bar.female-bar p {
+  position: absolute;
+  top: 35px;
+  right: 4px;
+}
+.gender-wrapper .gender-bar.male-bar .male-ratio{
+  position: absolute;
+  z-index: 1;
+  bottom: -56px;
+  left: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.gender-wrapper .gender-bar.female-bar .female-ratio {
+  position: absolute;
+  z-index: 1;
+  bottom: -56px;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* echart tooltip*/
+.tooltip-wrapper{
+  padding: 8px;
+}
+.tooltip-title{
+  height: 32px;
+  padding: 0 8px;
+  line-height: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid #CCCCCC;
+}
+.tooltip-title .tooltip-title-icon{
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.tooltip-title .tooltip-title-text{
+  color: #333333;
+}
+.tooltip-content .tooltip-content-item{
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+.tooltip-content .tooltip-content-item .item-legend{
+  float: left;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.tooltip-content .tooltip-content-item .item-name{
+  float: left;
+  display: inline-block;
+  color: #4d4d4d;
+}
+.tooltip-content .tooltip-content-item .item-value{
+  float: right;
+  display: inline-block;
+  color: #333333;
+  font-weight: bold;
+}
+/* svg */
+#directorSvg, #actorSvg{
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family:"sans-serif";
+  font-size:14px;
+  text-anchor:middle
+}

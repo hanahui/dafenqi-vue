@@ -1,0 +1,94 @@
+#app {
+  &.darkTheme {
+    @disabled-text-color: #4d4d4d;
+    @modal-background: #252525;
+    @border-color: #0d0d0d;
+    // darkTheme style
+    .history{
+      margin-bottom: 24px;
+      padding-top: 16px;
+    }
+    .form {
+      padding-top: 16px;
+
+      .form-group {
+        display: flex;
+        margin-bottom: 24px;
+
+        .group-label {
+          min-width: 80px;
+          line-height: 28px;
+          text-align: right;
+
+          .label {
+            .required-flag {
+              color: #FB4B53;
+            }
+          }
+
+          &.disabled {
+            color: @disabled-text-color;
+          }
+
+          &.inline-group-label {
+            min-width: 125px;
+          }
+        }
+
+        .group-content {
+          display: flex;
+          line-height: 28px;
+
+          &.margin-left {
+            margin-left: 55px;
+            line-height: 28px;
+          }
+
+          .script-label {
+            display: inline-block;
+            height: 28px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &.margin-left {
+              margin-left: 16px;
+            }
+
+            &.disabled {
+              color: @disabled-text-color;
+            }
+          }
+        }
+      }
+
+      &.info-form{
+        .form-group{
+          margin-bottom: 16px;
+          .group-content{
+            .checkbox-flag{
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              margin-top: 7px;
+              border: 1px solid #f2f2f2;
+              background: transparent;
+              margin-right: 10px;
+              vertical-align: middle;
+              cursor: not-allowed;
+              &.checked{
+                background: #f2f2f2 url('../../assets/img/icon-checked.png') center no-repeat;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.lightTheme {
+    // lightTheme style
+
+  }
+
+}
